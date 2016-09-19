@@ -26,12 +26,18 @@
   },
   "homepage": "https://github.com/truenegative/google-fonts-webpack-plugin#readme",
   "dependencies": {
-    
+    "lodash": "^4.15.0",
+    "request": "^2.75.0"
   },
   "devDependencies": {
-    
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7"
   },
   "peerDependencies": {
-    "html-webpack-plugin": "^2.10.0"
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.2"
   }
 }
