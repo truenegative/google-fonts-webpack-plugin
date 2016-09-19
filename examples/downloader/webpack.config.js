@@ -12,7 +12,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\}
+            { test: /\.html$/, loader: 'html' }
         ]
     },
     plugins: [
