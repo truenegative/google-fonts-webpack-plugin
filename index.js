@@ -1,6 +1,7 @@
 'use strict';
 var _ = require('lodash');
 var path = require('path');
+var Downloader = require('lib/downloader');
 
 let googleFontsUrl = "fonts.googleapis.com/css?family=";
 
@@ -31,17 +32,23 @@ GoogleFontsWebpackPlugin.prototype.apply = function(compiler) {
 
     compiler.plugin('compilation', function(compilation) {
 
-        compilation.plugin('html-webpack-plugin-before-html-generation', function(htmlPLuginData, callback) {
-            let cssAssets = htmlPLuginData.assets.css;
+        if (this.download) {
 
-            // Add fonts to beginning of CSS Assets
-            fontUrls.map(function(url) {
-                cssAssets.unshift(url);
-            })
-            
+        }
+        else {
 
-            callback();
-        });
+            compilation.plugin('html-webpack-plugin-before-html-generation', function(htmlPLuginData, callback) {
+                let cssAssets = htmlPLuginData.assets.css;
+
+                // Add fonts to beginning of CSS Assets
+                fontUrls.map(function(url) {
+                    cssAssets.unshift(url);
+                })
+                
+
+                callback();
+            });
+        }
     });
 };
 
