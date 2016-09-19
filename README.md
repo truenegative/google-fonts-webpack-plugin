@@ -69,7 +69,25 @@ new GoogleFontsWebpackPlugin({
 ```
 
 #### `fonts`
-Type: JSON Object, mandatory
+Type: `JSON Object`, mandatory
 
 An array of JSON objects for each font you wish to include in the webpack.
 
+#### `ssl`
+Type: `boolean`, default: `true`
+
+If `true`, it will use https for the googleapis URL. 
+
+
+### Thanks!
+
+Thanks to everyone who helped out with this project!
+
+If you would like to help contribute to this project, feel free to fork it and submit pull requests to help out!
+
+
+### About TN Labs
+
+TN Labs is the brainchild of hosting company, [True Negative](https://truenegative.com) that develops web apps, mobile apps, and more. The TN Labs community is a place where you can find information on our in-house apps, games & more, our open-source projects, as well as a collection of various development & system administration tutorials.
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/tn_labs.svg?style=social&label=Follow&maxAge=2592000?style=flat-square)]()
